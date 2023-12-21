@@ -1,0 +1,146 @@
+body, html{
+    margin:0;
+    padding: 0;
+}
+#navbar-imitator{
+    z-index:0;
+    padding-top:11.73vh ;
+}
+nav {
+    min-height: 11.73vh;
+    background-color: #7EA8C1;
+    width:100%;
+    position:fixed;
+    z-index: 3;
+
+}
+
+.navImg{
+    height:80px;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    display: grid;
+    grid-template-columns: 81px 30% repeat(4,auto);
+    grid-template-rows: 11.73vh;
+.desktop-invis{
+    display:none;
+}
+
+}
+
+.logo {
+
+    align-self: start;
+    position: relative;
+    width: auto;
+    height: 11.73vh;
+
+}
+
+.third{
+    grid-column: 3/span 1;
+  }
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    align-self: end;
+    text-align: center;
+}
+.desktop-vis{
+    align-self: end;
+    justify-items: end;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f2f2f2;
+    width:2.7em;
+    font-size:2em;
+    padding:0;
+}
+nav ul li a {
+    padding: 14px 16px;
+    line-height: 80px;
+}
+
+nav ul li:hover{
+    background-color: #D9ECFA;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    display: block;
+    position: relative;
+    background-color: #333;
+}
+.topnav .icon {
+    position: absolute;
+    right:5px;
+    display:none;
+}
+
+@media screen and (max-width: 400px) {
+    .topnav {
+        width: 100vw;
+    }
+    .desktop-vis {
+        display: none;
+        position: relative;
+    }
+    img.navImg.Icon{
+        position:relative;
+        right:7vw;
+    }
+
+    .topnav .icon {
+        display: block;
+        position: absolute;
+        right:2px;
+        top:0;
+
+    }
+.topnav ul li .desktop-invis {
+        display: block;
+        position: absolute;
+        right:2px;
+        top:0;
+    }
+
+    .topnav.responsive {
+        flex-direction: column; /* Change from grid to column layout */
+    }
+
+    .topnav.responsive ul {
+        display: flex;
+        flex-direction: column; /* Display items in a column layout */
+    }
+
+    .topnav.responsive li {
+        display: block;
+        align-self: flex-start;
+    }
+
+
+    .topnav ul li ul {
+        display: none;
+    }
+
+    .topnav.responsive .icon {
+        order: -1; /* Move the burger icon to the top */
+    }
+
+}

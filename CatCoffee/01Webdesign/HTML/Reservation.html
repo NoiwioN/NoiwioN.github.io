@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Css/Navbar.css">
+    <script src="../JavaScript/Navbar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Universal.css">
+    <link rel="stylesheet" href="../Css/Reservation.css">
+    <meta charset="UTF-8">
+    <title>Cat Cafè</title>
+    <script src="../JavaScript/Reservation.js"></script>
+</head>
+<body>
+<header>
+
+    <nav class="topnav" id="myTopnav">
+        <ul>
+
+            <li class="logo-container non-hover"><img src="../Media/Logo.JPG" class="logo navImg" alt="Logo"></li>
+            <li class="desktop-vis third"><a href="Index.html" class="red">Home</a></li>
+            <li class="desktop-vis"><a href="Katzen.html" class="red">Katzen</a></li>
+            <li class="desktop-vis"><a href="Menu.html" class="red">Menü</a></li>
+            <li class="desktop-vis"><a href="Reservation.html" class="red">Reservieren</a></li>
+            <li><a class="red desktop-invis" onclick="toggle()"
+            ><img src="../Media/Burger.JPG" class="navImg icon" alt=""></a
+            ></li>
+
+        </ul>
+    </nav>
+    <div id="navbar-imitator"></div>
+</header>
+<main id="reservation-holder" class="form-vis">
+
+
+    <form onsubmit="reservationTogler(event)">
+        <label for="firstname">Vorname:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Vorname" class="inline-input" pattern="^[A-Za-z]+$" required>
+
+        <label for="lastname">Nachname:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Nachname" class="br-input" pattern="^[A-Za-z]+$" required>
+
+        <label for="amount">Anzahl Leute:</label>
+        <input type="number" id="amount" name="amount" placeholder="0" class="full-Row" required>
+
+        <label for="email">E-Mail:</label>
+
+        <input type="text" id="email" name="email" placeholder="Email" class="fullRow" pattern="[\w.]+@(?:[\w.]+\.)+(?:com|net|ch)" required>
+
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="grid">
+        <h1 class="red centered-txt span-two">Wähle einen Tisch</h1>
+        <div class="subgrid">
+            <img src="../Media/stuhl.png" alt="chair" class="mobile-invis">
+            <img src="../Media/Table.png" alt="table" class="mobile-vis">
+            <img src="../Media/stuhl.png" alt="chair" class="mobile-invis">
+        </div>
+        <div class="subgrid">
+            <img src="../Media/stuhl.png" alt="chair" class="mobile-invis">
+            <img src="../Media/Table.png" alt="table" class="mobile-vis">
+            <img src="../Media/stuhl.png" alt="chair" class="mobile-invis">
+        </div>
+        <div class="subgrid">
+            <img src="../Media/stuhl.png" alt="chair" class="mobile-invis">
+            <img src="../Media/Table.png" alt="table" class="mobile-vis">
+            <img src="../Media/stuhl.png" alt="chair" class="mobile-invis">
+        </div>
+        <div class="subgrid">
+            <img src="../Media/stuhl.png" alt="chair" class="mobile-invis">
+            <img src="../Media/Table.png" alt="table" class="mobile-vis">
+            <img src="../Media/stuhl.png" alt="chair" class="mobile-invis">
+        </div>
+        <h2 class="red centered-txt span-two dark-blue-bck">Reservieren</h2>
+
+
+    </div>
+</main>
+
+</body>
+</html>

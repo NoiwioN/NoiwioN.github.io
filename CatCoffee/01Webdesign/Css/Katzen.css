@@ -1,0 +1,66 @@
+a {
+    text-decoration: none;
+}
+@media screen and (max-width:400px){
+
+main section article {
+    height:88vh;
+    width:90vw;
+    margin:auto;
+    display:grid;
+    grid-template:44vh 44vh/100%;
+
+}
+    main section article p{
+        font-size: 1.3rem;
+        overflow: clip;
+    }
+    img.cardImage{
+        height:auto;
+        width:100vw;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: center;
+        align-self: center;
+    }
+
+
+}
+@media screen and (min-width:401px){
+    main section {
+        width:90vw;
+        margin:auto;
+        display:grid;
+        grid-template: 25vh 25vh/ 42.5vw 42.5vw;
+        column-gap:5vw;
+        row-gap: 5vw;
+        padding-bottom: 10px;
+    }
+    main section article{
+        display:grid;
+        grid-template: 1fr/50% 50%;
+        background-color: #7EA8C1;
+        overflow: auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    img.cardImage{
+        height:25vh;
+        width:auto;
+        margin:auto;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: center;
+        align-self: center;
+
+    }
+    main section article:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    main section article p{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin:5px;
+        font-size: 0.9rem;
+    }
+}

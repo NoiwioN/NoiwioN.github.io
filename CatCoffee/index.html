@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Css/Main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cat Cafè</title>
+</head>
+<body>
+<header>
+    <nav class="topnav" id="myTopnav">
+        <ul>
+            <li><img src="../Media/Logo.JPG" class="logo navImg"/></li>
+            <li class="desktop-vis third"><a href="Index.html" class="red">Home</a></li>
+            <li class="desktop-vis"><a href="#" class="red">Katzen</a></li>
+            <li class="desktop-vis"><a href="#" class="red">Menü</a></li>
+            <li class="desktop-vis"><a href="#" class="red">Reservieren</a></li>
+            <a href="javascript:void(0);" class="red" onclick="myFunction()"
+            ><img src="../Media/Burger.JPG" class="navImg icon"></a
+            >
+        </ul>
+    </nav>
+</header>
+
+
+<h1 class="red Title">Welcome to Cat Cafè</h1>
+<h2 class="black subTitle">Cats, Coffee and More</h2>
+</body>
+</html>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>

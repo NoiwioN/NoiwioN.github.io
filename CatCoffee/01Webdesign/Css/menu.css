@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: none;
+    }
+}
+body {
+    margin: 0;
+    background-image: url("../Media/menu.jpg");
+    Background-size: cover;
+}
+.mitte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ECEBEF;
+    font-size: larger;
+}
+
+.mitte a {
+    color: #ECEBEF;
+}

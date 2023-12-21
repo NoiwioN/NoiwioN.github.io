@@ -1,0 +1,36 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
+
+body {
+    background-color: #D9ECFA;
+}
+.red {
+    color:#732222;
+}
+.light-blue{
+    color:#D9ECFA;
+}
+.dark-blue{
+    color:#7EA8C1;
+}
+.centered-txt{
+    text-align: center;
+}
+{
+
+}
+@media screen and (max-width:400px){
+    .mobile-invis {
+        display:none
+    }
+
+}
+@media screen and (min-width:401px){
+    .desktop-invis{
+        display:none;
+    }
+
+}

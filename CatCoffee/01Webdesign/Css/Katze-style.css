@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+
+}
+.katze {
+    grid-template-columns: 65% 35%;
+    column-gap: 20px;
+    display: grid;
+    padding: 2%;
+    margin: 3%;
+}
+.txt {
+    background-color: #7EA8C1;
+    color: #D9ECFA;
+    font-size: 60px;
+}
+
